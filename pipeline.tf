@@ -19,7 +19,7 @@ resource "aws_codebuild_project" "ditf-plan" {
   }
   source {
     type      = "CODEPIPELINE"
-    buildspec = file("buildspec/planspec.yml")
+    buildspec = file("buildspec/planspec.yaml")
   }
 }
 
@@ -44,7 +44,7 @@ resource "aws_codebuild_project" "ditf-apply" {
   }
   source {
     type      = "CODEPIPELINE"
-    buildspec = file("buildspec/applyspec.yml")
+    buildspec = file("buildspec/applyspec.yaml")
   }
 }
 
