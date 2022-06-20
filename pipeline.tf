@@ -69,7 +69,7 @@ resource "aws_codepipeline" "ditf_pipeline" {
       version          = "1"
       output_artifacts = ["tf-code"]
       configuration = {
-        FullRepositoryId     = "davoclock/aws-cicd-pipeline"
+        FullRepositoryId     = "duranisrael/AWS-CICD-pipeline-demo"
         BranchName           = "master"
         ConnectionArn        = var.codestar_connector_credentials
         OutputArtifactFormat = "CODE_ZIP"
