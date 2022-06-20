@@ -70,7 +70,7 @@ resource "aws_codepipeline" "ditf_pipeline" {
       output_artifacts = ["tf-code"]
       configuration = {
         FullRepositoryId     = "DuranIsrael/AWS-CICD-pipeline-demo"
-        BranchName           = "master"
+        BranchName           = "main"
         ConnectionArn        = var.codestar_connector_credentials
         OutputArtifactFormat = "CODE_ZIP"
       }
